@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "graphene-sqlalchemy-sample"
+version = "0.1.0"
+description = ""
+authors = ["Naoya Yamashita <conao3@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [{include = "graphene_sqlalchemy_sample", from = "src"}]
+
+[tool.poetry.scripts]
+graphene-sqlalchemy-sample = "graphene_sqlalchemy_sample.cli:main"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
