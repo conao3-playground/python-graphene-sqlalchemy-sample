@@ -14,6 +14,9 @@ graphene-sqlalchemy-sample = "graphene_sqlalchemy_sample.cli:main"
 python = "^3.12"
 graphene-sqlalchemy = {version = "^3.0.0b4", allow-prereleases = true}
 
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.5.0"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
